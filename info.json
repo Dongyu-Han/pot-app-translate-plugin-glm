@@ -1,33 +1,33 @@
 {
-  "id": "plugin.com.r3miliasaiko.glm",
+  "id": "plugin.com.Dongyu-Han.glm",
   "plugin_type": "translate",
-  "icon": "chatglm.png",
+  "icon": "glm.svg",
   "display": "glm",
-  "homepage": "https://github.com/r3miliasaiko/pot-app-translate-plugin-glm",
+  "homepage": "https://github.com/Dongyu-Han/pot-app-translate-plugin-glm",
   "needs": [
     {
       "key": "model",
-      "display": "模型选择",
+      "display": "模型",
       "type": "select",
       "options": {
-        "GLM-4-Flash-250414": "GLM-4-Flash-250414",
-        "GLM-4.5-Flash": "GLM-4.5-Flash",
-        "GLM-4-FlashX-250414": "GLM-4-FlashX-250414",
-        "GLM-4-AirX": "GLM-4-AirX",
-        "GLM-4-Long": "GLM-4-Long",
-        "GLM-4-Air-250414": "GLM-4-Air-250414",
-        "GLM-4-Plus": "GLM-4-Plus",
-        "GLM-4.5-AirX": "GLM-4.5-AirX",
-        "GLM-4.5-Air": "GLM-4.5-Air",
-        "GLM-4.5-X": "GLM-4.5-X",
+        "GLM-4.7": "GLM-4.7",
+        "GLM-4.7-Flash": "GLM-4.7-Flash",
+        "GLM-4.7-FlashX": "GLM-4.7-FlashX",
+        "GLM-4.6": "GLM-4.6",
         "GLM-4.5": "GLM-4.5",
-          "GLM-4.6": "GLM-4.6"
+        "GLM-4.5-X": "GLM-4.5-X",
+        "GLM-4.5-Air": "GLM-4.5-Air",
+        "GLM-4.5-AirX": "GLM-4.5-AirX",
+        "GLM-4.5-Flash": "GLM-4.5-Flash",
+        "GLM-4-Flash-250414": "GLM-4-Flash-250414",
+        "GLM-4-FlashX-250414": "GLM-4-FlashX-250414",
+        "GLM-4-Long": "GLM-4-Long"
       },
-      "default": "GLM-4.5-Flash"
+      "default": "GLM-4.7-FlashX"
     },
     {
       "key": "apiKey",
-      "display": "API密钥",
+      "display": "密钥",
       "type": "input"
     }
   ],
