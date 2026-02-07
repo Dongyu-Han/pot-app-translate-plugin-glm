@@ -2,7 +2,7 @@ async function translate(text, from, to, options) {
     const { config, utils } = options;
     const { tauriFetch: fetch } = utils;
 
-    let { apiKey, model = "GLM-4.5-Flash" } = config;
+    let { apiKey, model = "GLM-4.7-FlashX" } = config;
 
     // 设置默认请求路径
     const requestPath = "https://open.bigmodel.cn/api/paas/v4/chat/completions";
@@ -24,17 +24,11 @@ async function translate(text, from, to, options) {
                 "content": `Translate into ${to}:\n${text}`
             }
         ],
-        temperature: 0.1,
-        top_p: 0.99,
-        frequency_penalty: 0,
-        presence_penalty: 0,
-        max_tokens: 2000
-    }
-
-    if (model === 'GLM-4.6' || model.startsWith('GLM-4.5')) { 
-        body.thinking = {
-            type: 'disabled'
-        };
+        temperature: 1.0,
+        max_tokens: 65536,
+        thinking: {
+            type: "disabled"
+        },
     }
 
     let res = await fetch(requestPath, {
