@@ -7,13 +7,12 @@
   "needs": [
     {
       "key": "api",
-      "display": " API",
-      "type": "input",
-      "default": "https://open.bigmodel.cn/api/coding/paas/v4/chat/completions"
+      "display": "API",
+      "type": "input"
     },
     {
       "key": "model",
-      "display": " 模型",
+      "display": "模型",
       "type": "select",
       "options": {
         "GLM-5": "GLM-5",
@@ -34,7 +33,7 @@
     },
     {
       "key": "apiKey",
-      "display": " 密钥",
+      "display": "密钥",
       "type": "input"
     }
   ],
