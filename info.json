@@ -9,7 +9,6 @@
       "key": "api",
       "display": " API",
       "type": "input",
-      "default": "https://open.bigmodel.cn/api/coding/paas/v4/chat/completions",
     },
     {
       "key": "model",
