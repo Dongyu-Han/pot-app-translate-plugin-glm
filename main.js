@@ -2,10 +2,9 @@ async function translate(text, from, to, options) {
     const { config, utils } = options;
     const { tauriFetch: fetch } = utils;
 
-    let { apiKey, model = "GLM-4.7-FlashX" } = config;
+    let { api, apiKey, model } = config;
 
-    // 设置默认请求路径
-    const requestPath = "https://open.bigmodel.cn/api/paas/v4/chat/completions";
+    const requestPath = api;
 
     const headers = {
         'Content-Type': 'application/json',
