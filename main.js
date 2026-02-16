@@ -21,8 +21,8 @@ async function translate(text, from, to, options) {
             {
                 "role": "user",
                 "content": `Translate into ${to}:\n${text}`
-            }
-        ]
+            },
+        ],
     }
 
     let res = await fetch(requestPath, {
