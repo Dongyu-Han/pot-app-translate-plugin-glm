@@ -8,7 +8,8 @@
     {
       "key": "api",
       "display": " API",
-      "type": "input"
+      "type": "input",
+      "default": "https://open.bigmodel.cn/api/coding/paas/v4/chat/completions"
     },
     {
       "key": "model",
@@ -27,7 +28,7 @@
         "GLM-4.5-Flash": "GLM-4.5-Flash",
         "GLM-4-Flash-250414": "GLM-4-Flash-250414",
         "GLM-4-FlashX-250414": "GLM-4-FlashX-250414",
-        "GLM-4-Long": "GLM-4-Long",
+        "GLM-4-Long": "GLM-4-Long"
       },
       "default": "GLM-4.7-FlashX"
     },
