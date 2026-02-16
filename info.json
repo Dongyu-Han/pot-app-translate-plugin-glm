@@ -7,12 +7,12 @@
   "needs": [
     {
       "key": "api",
-      "display": "API",
+      "display": " API",
       "type": "input"
     },
     {
       "key": "model",
-      "display": "模型",
+      "display": " 模型",
       "type": "select",
       "options": {
         "GLM-5": "GLM-5",
@@ -33,7 +33,7 @@
     },
     {
       "key": "apiKey",
-      "display": "密钥",
+      "display": " 密钥",
       "type": "input"
     }
   ],
