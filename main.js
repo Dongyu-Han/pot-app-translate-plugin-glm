@@ -23,7 +23,7 @@ async function translate(text, from, to, options) {
         ]
     }
 
-    let res = await fetch(requestPath, {
+    let res = await fetch(api, {
         method: 'POST',
         url: api,
         headers: headers,
