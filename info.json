@@ -6,10 +6,16 @@
   "homepage": "https://github.com/Dongyu-Han/pot-app-translate-plugin-glm",
   "needs": [
     {
+      "key": "api",
+      "display": "API",
+      "type": "input"
+      "default": "https://open.bigmodel.cn/api/paas/v4"
+    },{
       "key": "model",
       "display": "模型",
       "type": "select",
       "options": {
+        "GLM-5": "GLM-5",
         "GLM-4.7": "GLM-4.7",
         "GLM-4.7-Flash": "GLM-4.7-Flash",
         "GLM-4.7-FlashX": "GLM-4.7-FlashX",
