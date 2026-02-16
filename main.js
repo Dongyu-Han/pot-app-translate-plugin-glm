@@ -3,9 +3,7 @@ async function translate(text, from, to, options) {
     const { tauriFetch: fetch } = utils;
 
     let { api, apiKey, model } = config;
-
-    const requestPath = api;
-
+    
     const headers = {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${apiKey}`
@@ -21,13 +19,13 @@ async function translate(text, from, to, options) {
             {
                 "role": "user",
                 "content": `Translate into ${to}:\n${text}`
-            },
-        ],
+            }
+        ]
     }
 
     let res = await fetch(requestPath, {
         method: 'POST',
-        url: requestPath,
+        url: api,
         headers: headers,
         body: {
             type: "Json",
