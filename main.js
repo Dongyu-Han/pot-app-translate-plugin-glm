@@ -22,12 +22,7 @@ async function translate(text, from, to, options) {
                 "role": "user",
                 "content": `Translate into ${to}:\n${text}`
             }
-        ],
-        temperature: 1.0,
-        max_tokens: 65536,
-        thinking: {
-            type: "disabled"
-        },
+        ]
     }
 
     let res = await fetch(requestPath, {
